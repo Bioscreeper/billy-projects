@@ -1,2 +1,2 @@
-#cuboid
-##A simple program for mining a **not-cuboidal** area
+# cuboid
+## A simple program for mining a **not-cuboidal** area
