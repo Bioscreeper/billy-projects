@@ -1,0 +1,1 @@
+while true do print(table.unpack(table.pack(os.pullEvent()))) end

@@ -1,0 +1,23 @@
+local furnaces = peripherial.find("minecraft:furnace")
+local inputs = {"sc-goodies:gold_barrel_97"}
+local outputs = {"sc-goodies:gold_barrel_97"}
+local fuel = {"sc-goodies:gold_barrel_97"}
+
+local function checkInput(invs)
+    --loop over all inventories
+    for _,p in invs do
+        --check if it exists
+        if peripherial.isPresent(p) then
+            --if so, wrap it and iterate over
+            --all slots to find items
+            local inv = peripherial.wrap(p)
+            for s=1,inv.size() do
+                if inv.getItemDetail(s) then
+                end
+            end
+        else
+            --warn the user that an inventory doesn't exist
+            print("Warning! Nonexistent inventory \""..p..'"')
+        end
+    end
+end
